@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class Exemple1 {
 
-	public static void main(String []args) {
+	public static void main(String[] args) {
 		FileReader ficALire;
 		BufferedReader entree;
 		char c;
@@ -16,11 +16,11 @@ public class Exemple1 {
 			System.out.println(c);
 			entree.close();
 			ficALire.close();
-		}catch (FileNotFoundException e) {
+		} catch (FileNotFoundException e) {
 			System.out.println("Le fichier ne peut pas etre lu");
-		}catch (IOException ioe) {
+		} catch (IOException ioe) {
 			System.out.println("Erreur entree/sortie");
 		}
 	}
-	
+
 }

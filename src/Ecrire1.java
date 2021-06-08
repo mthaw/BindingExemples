@@ -4,11 +4,11 @@ import java.io.PrintWriter;
 
 public class Ecrire1 {
 
-	public static void main(String []args) {
+	public static void main(String[] args) {
 		String Fichier = "Ecrire.txt";
 		final String s1 = "Voici ce que je voudrais ";
 		final String s2 = "ecrire";
-		
+
 		FileWriter ficAEcrire;
 		PrintWriter sortie;
 		try {
@@ -17,9 +17,9 @@ public class Ecrire1 {
 			sortie.print(s1);
 			sortie.print(s2);
 			sortie.close();
-		}catch(IOException ioe) {
+		} catch (IOException ioe) {
 			System.out.println("Erreur entree/sortie");
 		}
 	}
-	
+
 }
